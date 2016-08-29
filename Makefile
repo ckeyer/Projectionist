@@ -1,13 +1,13 @@
 APP := projectionist
 PKG := github.com/ckeyer/projectionist
 PWD := $(shell pwd)
-IMAGE := ckeyer/projectionist
+IMAGE := ckeyer/video
 
 default:
 	echo "hello world"
 
 image: build-docker
-	docker build -t $(APP) . 
+	docker build -t $(IMAGE) . 
 
 build-docker:
 	docker run --rm \
